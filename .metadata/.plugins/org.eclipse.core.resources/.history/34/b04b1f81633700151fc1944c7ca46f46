@@ -1,0 +1,55 @@
+package com.guts.tile.ui;
+
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.GlyphLayout;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Rectangle;
+
+public class TextButton {
+
+	private float x, y;
+	private BitmapFont font;
+	private String fontText;
+	private GlyphLayout glayout;
+	private SpriteBatch batch;
+	private String fontText2;
+	private Rectangle bounds;
+	private boolean toggle = false;
+
+	public TextButton(float x, float y, SpriteBatch batch, BitmapFont font, String fontText , String fontText2) {
+
+		//font text 2 : it displays when toggle is true like sound off.
+		this.x = x;
+		this.y = y;
+		this.font = font;
+		this.fontText = fontText;
+		this.fontText2 = fontText2;
+		this.batch = batch;
+		glayout = new GlyphLayout(font, fontText);
+		bounds = new Rectangle(x, y, glayout.width, glayout.height);
+
+	}
+
+	public void draw() {
+		batch.begin();
+		if (toggle){
+			font.draw(batch, fontText, x, y);
+		}else{
+			font.draw(batch, fontText2, x, y);
+		}
+		batch.end();
+	}
+
+	public boolean touchToggle(int screenX, int screenY) {
+		if (bounds.contains(screenX, screenY)) {
+			if (!toggle) {
+				toggle = true;
+			} else {
+				toggle = false;
+			}
+			return true;
+		}
+		return false;
+	}
+	
+}

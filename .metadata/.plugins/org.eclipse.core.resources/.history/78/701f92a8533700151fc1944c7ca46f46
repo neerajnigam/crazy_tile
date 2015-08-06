@@ -1,0 +1,19 @@
+package com.guts.tile.ui;
+
+import com.badlogic.gdx.math.Rectangle;
+
+public class BasicButton {
+	
+	private float x , y , width , height ;
+	private Rectangle bounds;
+	
+	public BasicButton(float x,float y,float width,float height){
+		this.x = x;
+		this.y = y;
+		this.width = width;
+		this.height = height;
+		
+		bounds = new Rectangle(x, y, width, height);
+	}
+
+}

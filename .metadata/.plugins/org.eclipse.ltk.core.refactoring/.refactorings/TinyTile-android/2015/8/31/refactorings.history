@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring accessors="true" comment="Delete element from project &apos;TinyTile-android&apos;&#x0D;&#x0A;- Original project: &apos;TinyTile-android&apos;&#x0D;&#x0A;- Original element: &apos;Tile_Assets.png&apos;" description="Delete element" element1="assets/data/Tile_Assets.png" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1438409614974" subPackages="false" version="1.0"/>&#x0A;&#x0A;</session>

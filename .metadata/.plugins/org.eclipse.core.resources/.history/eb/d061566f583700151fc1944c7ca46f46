@@ -1,0 +1,18 @@
+package com.guts.tile.ui;
+
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+
+public class TextButton extends BasicButton {
+	
+	private BitmapFont font;
+	private String fontText;
+
+	public TextButton(float x, float y, float width, float height, BitmapFont font , String fontText ) {
+		super(x, y, width, height);
+		// TODO Auto-generated constructor stub
+		this.font = font;
+		this.fontText = fontText;
+	}
+	
+	
+}

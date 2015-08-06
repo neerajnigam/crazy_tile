@@ -1,0 +1,40 @@
+package com.guts.tile.ui;
+
+import com.badlogic.gdx.math.Rectangle;
+
+public class BasicButton {
+
+	protected float x, y, width, height;
+	protected Rectangle bounds;
+	protected boolean toggle = false;
+
+	public BasicButton(float x, float y, float width, float height) {
+		this.x = x;
+		this.y = y;
+		this.width = width;
+		this.height = height;
+
+		bounds = new Rectangle(x, y, width, height);
+	}
+
+	public boolean isClicked(int screenX, int screenY) {
+		return bounds.contains(screenX, screenY);
+	}
+
+	public boolean touchToggle(int screenX, int screenY) {
+		if (bounds.contains(screenX, screenY)) {
+			if (!toggle) {
+				toggle = true;
+			} else {
+				toggle = false;
+			}
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean getToggle(){
+		return toggle;
+	}
+
+}

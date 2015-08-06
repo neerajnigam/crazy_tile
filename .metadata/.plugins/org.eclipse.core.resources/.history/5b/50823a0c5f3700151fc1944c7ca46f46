@@ -1,0 +1,36 @@
+package com.guts.tile.ui;
+
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.GlyphLayout;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
+public class TextButton {
+	
+	private float x , y;
+	private BitmapFont font;
+	private String fontText;
+	private GlyphLayout glayout;
+	private BasicButton b;
+	private SpriteBatch batch;
+
+	public TextButton(float x , float y ,SpriteBatch batch, BitmapFont font , String fontText){
+		
+		this.x = x;
+		this.y = y;
+		this.font = font ;
+		this.fontText = fontText;
+		this.batch = batch;
+		glayout = new GlyphLayout(font , fontText);
+		b = new BasicButton(x, y, glayout.width	, glayout.height);
+		
+	}
+	public void draw(){
+		font.draw(batch, glayout, x, y);
+	}
+	public boolean isTouchDown(int screenX, int screenY) {
+		return b.isTouchDown(screenX, screenY);
+	}
+	public boolean isClicked(int screenX , int screenY){
+		return b.isClicked(screenX, screenY);
+	}
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.Texture"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.Texture.TextureFilter"/>
+<fullyQualifiedTypeName name="com.guts.tile.game.MyGdxGame"/>
+<fullyQualifiedTypeName name="com.guts.tile.twinaccessor.SpriteAccessor"/>
+<fullyQualifiedTypeName name="com.guts.tile.helper.AssetLoader"/>
+<fullyQualifiedTypeName name="com.guts.tile.screens.SplashScreen"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.g2d.TextureRegion"/>
+<fullyQualifiedTypeName name="com.guts.tile.screens.GameScreen"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.guts.tile.helper.TileTouchHandler"/>
+<fullyQualifiedTypeName name="com.guts.tile.worlds.MainWorld"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.InputProcessor"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.g2d.SpriteBatch"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.guts.tile.ui.SimpleButton"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.scenes.scene2d.ui.TextButton"/>
+<fullyQualifiedTypeName name="com.guts.tile.ui.TextButton"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.g2d.GlyphLayout"/>
+<fullyQualifiedTypeName name="android.support.v4.app.FragmentActivity"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.backends.android.AndroidFragmentApplication.Callbacks"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.backends.android.AndroidFragmentApplication"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="android.R.id"/>
+<fullyQualifiedTypeName name="com.curvegames.tile.game.MyGdxGame"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.backends.android.AndroidApplication"/>
+<fullyQualifiedTypeName name="com.google.android.gms.ads.AdView"/>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="com.google.android.gms.ads.AdSize"/>
+<fullyQualifiedTypeName name="android.widget.RelativeLayout"/>
+<fullyQualifiedTypeName name="android.view.ViewGroup"/>
+<fullyQualifiedTypeName name="com.google.android.gms.ads.AdRequest"/>
+<fullyQualifiedTypeName name="com.curvegames.ads.AdsController"/>
+<fullyQualifiedTypeName name="android.net.ConnectivityManager"/>
+<fullyQualifiedTypeName name="android.net.NetworkInfo"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="com.google.android.gms.ads.AdListener"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.Gdx"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+</qualifiedTypeNameHistroy>
