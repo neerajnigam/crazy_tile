@@ -1,0 +1,74 @@
+package com.guts.tile;
+
+import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.RelativeLayout;
+
+import com.badlogic.gdx.backends.android.AndroidApplication;
+import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
+import com.curvegames.ads.AdsController;
+import com.curvegames.crazyballs.game.MyGdxGame;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+
+public class MainActivity extends AndroidApplication implements AdsController{
+	
+	private static final String BANNER_AD_UNIT_ID = "ca-app-pub-5519384153835422/2811367393";
+	 
+	AdView bannerAd;
+	
+	
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        
+        AndroidApplicationConfiguration cfg = new AndroidApplicationConfiguration();
+        
+        View gameView = initializeForView(new MyGdxGame(this), cfg);
+        
+        RelativeLayout layout = new RelativeLayout(this);
+        layout.addView(gameView, ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT);
+                 
+        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT);
+        params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+        layout.addView(bannerAd, params);
+         
+        setContentView(layout);
+    }
+    
+    public void setupAds() {
+        bannerAd = new AdView(this);
+        bannerAd.setVisibility(View.INVISIBLE);
+        bannerAd.setBackgroundColor(0xff000000); // black
+        bannerAd.setAdUnitId(BANNER_AD_UNIT_ID);
+        bannerAd.setAdSize(AdSize.SMART_BANNER);
+    }
+
+	@Override
+	public void showBannerAd() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void hideBannerAd() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean isWifiConnected() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void showInterstitialAd(Runnable then) {
+		// TODO Auto-generated method stub
+		
+	}
+}
