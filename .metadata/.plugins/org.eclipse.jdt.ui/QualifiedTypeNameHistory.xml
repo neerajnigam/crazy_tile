@@ -32,11 +32,12 @@
 <fullyQualifiedTypeName name="android.widget.RelativeLayout"/>
 <fullyQualifiedTypeName name="android.view.ViewGroup"/>
 <fullyQualifiedTypeName name="com.google.android.gms.ads.AdRequest"/>
-<fullyQualifiedTypeName name="com.curvegames.ads.AdsController"/>
 <fullyQualifiedTypeName name="android.net.ConnectivityManager"/>
 <fullyQualifiedTypeName name="android.net.NetworkInfo"/>
 <fullyQualifiedTypeName name="android.content.Context"/>
 <fullyQualifiedTypeName name="com.google.android.gms.ads.AdListener"/>
 <fullyQualifiedTypeName name="com.badlogic.gdx.Gdx"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="com.curvegames.crazyballs.game.MyGdxGame"/>
+<fullyQualifiedTypeName name="com.curvegames.ads.AdsController"/>
 </qualifiedTypeNameHistroy>
